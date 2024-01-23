@@ -43,3 +43,19 @@ Note:
 
 
 // Solution
+
+function getWinner(listOfBallots) {
+  let res = [];
+  for (let i = 0; i < listOfBallots.length; i++) {
+    if (res[listOfBallots[i]] == null) {
+      res[listOfBallots[i]] = 1;
+    } else {
+      res[listOfBallots[i]]++;
+    }
+    
+    if (res[listOfBallots[i]] > listOfBallots.length / 2) {
+      return listOfBallots[i];
+    }
+  }
+  return null;
+}
