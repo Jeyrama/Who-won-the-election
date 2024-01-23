@@ -60,7 +60,7 @@ function getWinner(listOfBallots) {
   return null;
 }
 
-// or
+// or 
 
 function getWinner(list) {
   let result= {};
