@@ -40,3 +40,6 @@ Note:
   The given list is immutable, i.e. you cannot modify the list 
   (otherwise this could lead to vote rigging).
 */
+
+
+// Solution
