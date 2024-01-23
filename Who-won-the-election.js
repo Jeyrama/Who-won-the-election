@@ -59,3 +59,13 @@ function getWinner(listOfBallots) {
   }
   return null;
 }
+
+// or
+
+function getWinner(list) {
+  let result= {};
+  let winNumber = list.length / 2;
+  list.forEach(function(char) { ++result[char] || (result[char] = 1); });
+  let answer = Object.keys(result).filter(function(key) {if (result[key] > winNumber) return key; });
+  return answer[0] || null;
+}
